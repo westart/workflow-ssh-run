@@ -1,0 +1,32 @@
+name: 'workflow-scp-deploy'
+description: 'Deploy via scp'
+author: 'Westart.it'
+inputs:
+  host:
+    description: 'host remoto'
+    required: true
+  user:
+    description: 'utente'
+    required: true
+  port:
+    description: 'porta'
+    default: '22'
+  key:
+    description: 'chiave privata'
+    required: false  
+  password:
+    description: 'password'
+    required: false
+  source:
+    description: 'percorso sorgente'
+    required: false
+  destination:
+    description: 'percorso destinazione'
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'package'
+  color: 'green'
