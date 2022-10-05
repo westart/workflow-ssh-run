@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "$INPUT_COMMANDS"
+for i in  "$INPUT_COMMANDS"; do echo "---$i---"; done
 if [[ "$INPUT_KEY" ]]; then
     echo -e "${INPUT_KEY}" > tmp_id
     chmod 600 tmp_id
