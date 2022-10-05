@@ -17,12 +17,9 @@ inputs:
   password:
     description: 'password'
     required: false
-  source:
-    description: 'percorso sorgente'
-    required: false
-  destination:
-    description: 'percorso destinazione'
-    required: false
+  commands:
+    description: 'array di comandi'
+    required: true
 
 runs:
   using: 'docker'
