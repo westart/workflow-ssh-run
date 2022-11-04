@@ -1,7 +1,7 @@
 #!/bin/sh
-#IFS=$'\n' read -a ARR < $INPUT_COMMANDS
+IFS=$'\n' read -a ARR < "${INPUT_COMMANDS}"
 #echo "${ARR}"
-for i in  "${INPUT_COMMANDS}"; do echo "eseguo : $i"; done
+for i in  "${ARR}"; do echo "eseguo : $i"; done
 #if [[ "$INPUT_KEY" ]]; then
 #    echo -e "${INPUT_KEY}" > tmp_id
 #    chmod 600 tmp_id
