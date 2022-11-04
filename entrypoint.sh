@@ -1,7 +1,9 @@
 #!/bin/sh
-IFS=$'\n' read -a ARR < $INPUT_COMMANDS
+#IFS=$'\n' read -a ARR < $INPUT_COMMANDS
+echo "------"
 echo "${INPUT_COMMANDS}"
-echo "${ARR}"
+echo "------"
+#echo "${ARR}"
 #for i in  "$ARR"; do echo "---$i---"; done
 #if [[ "$INPUT_KEY" ]]; then
 #    echo -e "${INPUT_KEY}" > tmp_id
